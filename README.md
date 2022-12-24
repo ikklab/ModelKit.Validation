@@ -131,7 +131,7 @@ services.AddScoped<IModelValidator<Person>>(_ =>
     return new ModelValidator<Person, PersonRulesDefinition>();
 });
 ```
-It is possible to do it without a generic interface as well:
+It is possible to do the samething with non-generic interface approach as well:
 
 ```cs
 services.AddScoped<IModelValidator>(_ =>
@@ -141,7 +141,7 @@ services.AddScoped<IModelValidator>(_ =>
 ```
 
 > **Note**
-> **However**, you would need to call ```ToGeneric<T>``` to be able to access Evaluate method once you have an instance of this validator like this:
+> **Be aware**, you need to call ```ToGeneric<T>``` to be able to access Evaluate method once you have an instance of this validator by second approach like this:
 
 ```cs
 var result = validator.ToGeneric<Person>().Evaluate(model);
