@@ -152,7 +152,7 @@ var result = validator.ToGeneric<Person>().Evaluate(model);
 | Property  | Type | Purpose |
 | ------------- | ------------- | ------------- |
 | Key  | string | Holds a distinguished value for object  |
-| Accept  | Expression<Func<T>> | Holds a lambda expression that need to be statisfied by model  |
+| Accept  | Expression<Func\<T>> | Holds a lambda expression that need to be statisfied by model  |
 | Error  | tuple | Holds a pair (property, message) value in case a model failed to satisfy Accept expression    |
 | Result  | bool | Holds the evaluation result of Accept expression  |
 | PreConditions  | string[] | An optional property to define relying rule(s) to avoid expression complexity & un-necessary evaluation |
