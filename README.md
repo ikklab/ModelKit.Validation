@@ -1,3 +1,6 @@
+[![Version](https://img.shields.io/nuget/v/1.0.1)](https://www.nuget.org/packages/ModelKit.Validation)
+[![License](https://img.shields.io/github/license/devlooped/TableStorage.svg?color=blue)](https://github.com/ikklab/ModelKit.Validation/blob/main/LICENSE)
+
 # ModelKit.Validation
 
 A rule-based model validation utility with the power of Lambda expression
